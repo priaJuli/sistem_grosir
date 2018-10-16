@@ -91,31 +91,12 @@
                                                 <!-- tr dinamis berdasarkan data yg di search/input  -->
                                                 <!-- data di tr semuanya menggunakan array,  -->
 
-                                                <tr>
-                                                    <td align="center"> 128732198371 </td>
-                                                    <td> Vaseline</div> </td>
-                                                    <td> 30000 </td>
-                                                    <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
-                                                    <td> 60000 </td>
-                                                    <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
-                                                            <i class="fa fa-remove"></i>
-                                                        </a> </td>
-                                                </tr>
+                                                
                                                 <tr>
                                                     <td align="center"> 128732198371 </td>
                                                     <td>Vaseline</div> </td>
                                                     <td> 30000 </td>
-                                                    <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
-                                                    <td> 60000 </td>
-                                                    <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
-                                                            <i class="fa fa-remove"></i>
-                                                        </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center"> 128732198371 </td>
-                                                    <td>Vaseline</div> </td>
-                                                    <td> 30000 </td>
-                                                    <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
+                                                    <td> <input type="text" class="form-control jml_barang" value="1" autofocus=""></td>
                                                     <td> 60000 </td>
                                                     <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
                                                             <i class="fa fa-remove"></i>

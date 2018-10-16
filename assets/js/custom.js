@@ -1,5 +1,26 @@
 (function($) {
 	// body...
+	
+	$('.jml_barang').on('change', function(event){
+				console.log($(this).val());
+				var parent = $(this).parent();
+				var next_p = $(parent).next();
+				var prev_p = $(parent).prev().text();
+				$(next_p).text(prev_p * $(this).val());	
+				// console.log(prev_p * $(this).val());			
+		});
+
+	function js_edit(){
+		$('.jml_barang').on('change', function(event){
+				console.log($(this).val());
+				var parent = $(this).parent();
+				var next_p = $(parent).next();
+				var prev_p = $(parent).prev().text();
+				$(next_p).text(prev_p * $(this).val());	
+				// console.log(prev_p * $(this).val());			
+		});
+	}
+
 	$('#button_add_barang').on('click', function(event){
 		event.preventDefault();
 		var kd_br = $('#kode_barang').val();
@@ -17,7 +38,7 @@
 	                console.log(result);
 	                var new_row = '<tr><td align="center">'+result.kd_barang+'</td>'
                     +'<td>'+result.nama_barang+'</div> </td><td>'+result.harga_jual+'</td>'
-                    +'<td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>'
+                    +'<td> <input type="text" class="form-control jml_barang" value="1" autofocus=""></td>'
                     +'<td>'+result.harga_jual+'</td><td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">'
                     +'<i class="fa fa-remove"></i></a> </td></tr>';
 
@@ -33,11 +54,15 @@
 	                // $("#stok").val(result.stok);
 	                // $("#tanggal_input").val(result.tanggal_input);
 	                // $("#keterangan").val(result.keterangan);
+	                js_edit();
 	            },
 	            error: function(e){
 	            	console.log(e);
 	            }
 	        });
+
 	});
+
+	
 
 })(jQuery);
