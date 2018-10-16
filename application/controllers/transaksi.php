@@ -79,7 +79,7 @@ class transaksi extends CI_Controller {
 	function tampil_barang_edit()
 	{
 		$id=$this->input->get("kd_barang");
-		$query=$this->Model_barang->view_by_id($id);
+		$query=$this->Model_barang->view_by_kd($id);
 		echo json_encode($query);
 	}
 

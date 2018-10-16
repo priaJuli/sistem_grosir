@@ -6,16 +6,19 @@
 		var base_url = "<?php echo base_url();?>";
 		var table = $('#table_trans tbody');
 		$.ajax({
-	            url : base_url+"transaksi/tampil_barang_edit/",
+	            url : "http://localhost/sistem_grosir/transaksi/tampil_barang_edit/",
 	            type : "GET",
-	            data : kd_br,
+	            data : {
+	            	kd_barang: kd_br
+	            },
 	            success: function(data){
-	                $(window).scrollTop(0);
+	                // $(window).scrollTop(0);
 	                var result=JSON.parse(data);
+	                console.log(result);
 	                var new_row = '<tr><td align="center">'+result.kd_barang+'</td>'
                     +'<td>'+result.nama_barang+'</div> </td><td>'+result.harga_jual+'</td>'
                     +'<td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>'
-                    +'<td>'+result.harga_beli+'</td><td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">'
+                    +'<td>'+result.harga_jual+'</td><td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">'
                     +'<i class="fa fa-remove"></i></a> </td></tr>';
 
 	                $(table).append(new_row);

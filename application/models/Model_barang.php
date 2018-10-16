@@ -26,6 +26,10 @@ class Model_barang extends CI_Model
         return $this->db->query("SELECT * FROM barang WHERE id_barang='$id'")->row();
     }
 
+    function view_by_kd($kd=''){
+        return $this->db->query("SELECT * FROM barang WHERE kd_barang='$kd'")->row();   
+    }
+
     function delete($id=null)
     {
         $this->db->where('id_barang', $id);
