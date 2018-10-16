@@ -1,0 +1,13 @@
+git stash 		= menyimpan perubahan temporary
+git pull origin develop	= mengecek perubahan other user
+git stash apply		= peneggabungan perubahan 2 user
+git add . 		= menambah perubahan file 
+
+(1) vaseline 4000 * 2 = 8000
+(2) aqua     3000 * 4 = 12000
+
+
+idbarang_jumlah = 1-2 # 2-4
+jumlah_barang = 2 
+
+nama_barang, jumlah, harga_jual, total_harga

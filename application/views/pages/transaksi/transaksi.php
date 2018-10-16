@@ -19,11 +19,12 @@
                                     <div class="col-md-5">
                                         <input type="text" id="nama_pelanggan" class="form-control" autofocus=""> </div>
                                 </div>
+                                <!-- ketika onclick button tambahan search, input data into table (saved database not yet) -->
                                 <div class="form-group">
                                     <label  class="col-md-3">Kode Barang</label>
                                     <div class="col-md-5">
                                         <input type="text" class="form-control" id="kode_barang"> </div>
-                                        <button type="button" class="btn blue">Tambahkan</button>
+                                        <button type="button" onclick="" class="btn blue">Tambahkan</button>
                                 </div>
                                 
                             </form>
@@ -86,9 +87,33 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+
+                                                <!-- tr dinamis berdasarkan data yg di search/input  -->
+                                                <!-- data di tr semuanya menggunakan array,  -->
+
                                                 <tr>
                                                     <td align="center"> 128732198371 </td>
-                                                    <td> Vaseline </td>
+                                                    <td> Vaseline</div> </td>
+                                                    <td> 30000 </td>
+                                                    <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
+                                                    <td> 60000 </td>
+                                                    <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
+                                                            <i class="fa fa-remove"></i>
+                                                        </a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center"> 128732198371 </td>
+                                                    <td>Vaseline</div> </td>
+                                                    <td> 30000 </td>
+                                                    <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
+                                                    <td> 60000 </td>
+                                                    <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
+                                                            <i class="fa fa-remove"></i>
+                                                        </a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center"> 128732198371 </td>
+                                                    <td>Vaseline</div> </td>
                                                     <td> 30000 </td>
                                                     <td> <input type="text" class="form-control" value="1" name="" autofocus=""></td>
                                                     <td> 60000 </td>

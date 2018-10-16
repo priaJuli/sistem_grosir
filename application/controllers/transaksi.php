@@ -179,7 +179,6 @@ class transaksi extends CI_Controller {
 	      
 	            });
 
-	            
 			});
 
 			function hide_form(){
