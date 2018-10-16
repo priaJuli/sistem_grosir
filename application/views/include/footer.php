@@ -61,6 +61,9 @@
         <script src="<?=base_url()?>assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
 
+        <!-- CUSTOM SCRIPT -->
+        <script src="<?=base_url()?>assets/js/custom.js" type="text/javascript"></script>
+
 
     </body>
     <script type="text/javascript">

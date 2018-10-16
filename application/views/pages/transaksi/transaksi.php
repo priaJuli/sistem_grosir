@@ -24,7 +24,7 @@
                                     <label  class="col-md-3">Kode Barang</label>
                                     <div class="col-md-5">
                                         <input type="text" class="form-control" id="kode_barang"> </div>
-                                        <button type="button" onclick="" class="btn blue">Tambahkan</button>
+                                        <button type="button" id="button_add_barang" class="btn blue">Tambahkan</button>
                                 </div>
                                 
                             </form>
@@ -75,7 +75,7 @@
                             <div class="portlet  box">
                                 <div class="portlet-body">
                                     <div class="table-responsive">
-                                        <table class="table table-hover table-bordered table-striped">
+                                        <table class="table table-hover table-bordered table-striped" id="table_trans">
                                             <thead>
                                                 <tr >
                                                     <th width="170"> Kode Barang </th>
