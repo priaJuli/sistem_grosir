@@ -21,6 +21,11 @@
 		});
 	}
 
+	function delItemTransaksi(kd_br){
+		var parent_tr = $(this).parent('tr').css({"color": "red", "border": "2px solid red"});
+		var parent_table = $(this).parent('table').css({"color": "red", "border": "2px solid red"});
+	}
+
 	$('#button_add_barang').on('click', function(event){
 		event.preventDefault();
 		var kd_br = $('#kode_barang').val();
@@ -39,8 +44,8 @@
 	                var new_row = '<tr><td align="center">'+result.kd_barang+'</td>'
                     +'<td>'+result.nama_barang+'</div> </td><td>'+result.harga_jual+'</td>'
                     +'<td> <input type="text" class="form-control jml_barang" value="1" autofocus=""></td>'
-                    +'<td>'+result.harga_jual+'</td><td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">'
-                    +'<i class="fa fa-remove"></i></a> </td></tr>';
+                    +'<td>'+result.harga_jual+'</td><td align="center"> <button onclick="delItemTransaksi('+result.kd_barang+')" class="btn btn-circle btn-icon-only red">'
+                    +'<i class="fa fa-remove"></i></button></td></tr>';
 
 	                $(table).append(new_row);
 	                // $("#id_barang").val(result.id_barang);

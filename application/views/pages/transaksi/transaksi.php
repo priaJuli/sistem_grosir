@@ -98,9 +98,9 @@
                                                     <td> 30000 </td>
                                                     <td> <input type="text" class="form-control jml_barang" value="1" autofocus=""></td>
                                                     <td> 60000 </td>
-                                                    <td align="center"> <a href="javascript:;" class="btn btn-circle btn-icon-only red">
-                                                            <i class="fa fa-remove"></i>
-                                                        </a> </td>
+                                                    <td align="center"> <button onclick="delItemTransaksi(128732198371)" class="btn btn-circle btn-icon-only red">
+                                                            <i class="fa fa-remove"></i></button>
+                                                         </td>
                                                 </tr>
                                             </tbody>
                                         </table>
