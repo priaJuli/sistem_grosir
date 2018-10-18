@@ -7,6 +7,9 @@
                 
                 <div class="portlet-body">
                     <div class="row">
+                        <div class="message col-md-3"></div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <form class="form-horizontal" role="form">
                                 <div class="form-group">
@@ -23,7 +26,7 @@
                                 <div class="form-group">
                                     <label  class="col-md-3">Kode Barang</label>
                                     <div class="col-md-5">
-                                        <input type="text" class="form-control" id="kode_barang"> </div>
+                                        <input type="text" class="form-control" id="kode_barang" require> </div>
                                         <button type="button" id="button_add_barang" class="btn blue">Tambahkan</button>
                                 </div>
                                 
@@ -92,7 +95,7 @@
                                                 <!-- data di tr semuanya menggunakan array,  -->
 
                                                 
-                                                <tr>
+                                                <!-- <tr>
                                                     <td align="center"> 128732198371 </td>
                                                     <td>Vaseline</div> </td>
                                                     <td> 30000 </td>
@@ -101,7 +104,7 @@
                                                     <td align="center"> <button onclick="delItemTransaksi(128732198371)" class="btn btn-circle btn-icon-only red">
                                                             <i class="fa fa-remove"></i></button>
                                                          </td>
-                                                </tr>
+                                                </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -113,16 +116,20 @@
                         </div>
                         <div class="col-md-6">
                             <div class="well">
+
                                 <div class="row static-info align-reverse">
                                     <div class="col-md-8 name"> Sub Total: </div>
-                                    <div class="col-md-3 value"> $1,124.50 </div>
+                                    <div class="col-md-3 value-total">0</div>
+
                                 </div>
-                                <div class="row static-info align-reverse">
+
+                                <!-- <div class="row static-info align-reverse">
                                     <div class="col-md-8 name"> Shipping: </div>
                                     <div class="col-md-3 value"> $40.50 </div>
-                                </div>
+                                </div> -->
                                 
                             </div>
+                            <button style="float: right;" class="btn blue" id="checkout">Checkout</button>
                         </div>
                     </div>
                             

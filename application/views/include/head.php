@@ -40,12 +40,14 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="<?=base_url()?>assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="<?=base_url()?>assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?=base_url()?>assets/global/css/custom.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <link href="<?=base_url()?>assets/global/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
         <link href="<?=base_url()?>assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
         <link href="<?=base_url()?>assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
         <link href="<?=base_url()?>assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
         <link href="<?=base_url()?>assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href="<?=base_url()?>assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="<?=base_url()?>assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />

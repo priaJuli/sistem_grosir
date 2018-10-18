@@ -35,44 +35,39 @@ class transaksi extends CI_Controller {
 
 	function input_data()
 	{
-		$id 			= $this->input->post('id_barang');
-		$kd_barang		= $this->input->post('kd_barang');
-		$kd_supplier	= $this->input->post('kd_supplier');
-		$nama_barang	= $this->input->post('nama_barang');
-		$kategori 		= $this->input->post('kategori');
-		$harga_beli 	= $this->input->post('harga_beli');
-		$harga_jual 	= $this->input->post('harga_jual');
-		$satuan 		= $this->input->post('satuan');
-		$stok 			= $this->input->post('stok');
-		$tanggal		= $this->input->post('tanggal_input');
-		$keterangan		= $this->input->post('keterangan');
+		$id 					= $this->input->post('kd_transaksi');
+		$idbarang_jumlah		= $this->input->post('idbarang_jumlah');
+		// $kd_pelanggan			= $this->input->post('kd_pelanggan');
+		// $id_admin				= $this->input->post('id_admin');
+		$total			 		= $this->input->post('total');
+		// $tgl_beli			 	= $this->input->post('harga_beli');
+		// $harga_jual 	= $this->input->post('harga_jual');
+		// $satuan 		= $this->input->post('satuan');
+		// $stok 			= $this->input->post('stok');
+		// $tanggal		= $this->input->post('tanggal_input');
+		// $keterangan		= $this->input->post('keterangan');
 
 		$data = array(
-					'kd_barang'		=> $kd_barang, 
-					'kd_supplier'	=> $kd_supplier, 
-					'nama_barang'	=> $nama_barang, 
-					'kategori'		=> $kategori,
-					'satuan'		=> $satuan,
-					'harga_beli'	=> $harga_beli,
-					'harga_jual'	=> $harga_jual,
-					'stok'			=> $stok,
-					'tanggal_input'	=> $tanggal,
-					'keterangan'	=> $keterangan,
+			'idbarang_jumlah'	=> $idbarang_jumlah,
+			'kd_pelanggan'		=> 'PL-947-0000',
+			'id_admin'			=> '6',
+			'total'				=> $total,
+			'tgl_beli'			=> date("Y-m-d"),
 		);
 
 		if ($id) {
-			$this->Model_barang->insert_barang($data,$id);
-			$msg='<div class="alert alert-success">
-			<button class="close" data-close="alert"></button> <b>Update</b> Data Sukses! </div>';
+			$this->Model_transaksi->insert_transaksi($data,$id);
+			$msg= "update success";
 		}else{
-			$this->Model_barang->insert_barang($data);
-			$msg='<div class="alert alert-success">
-			<button class="close" data-close="alert"></button> <b>Input</b> Data Sukses! </div>';
+			$this->Model_transaksi->insert_transaksi($data);
+			$msg= "insert success";
 		}
+
+		echo json_encode($msg);
 	
-		$this->index($msg);
-		$this->session->set_flashdata('message', $msg);
-		redirect('transaksi');
+		// $this->index($msg);
+		// $this->session->set_flashdata('message', $msg);
+		// redirect('transaksi');
 
 	}
 
@@ -91,6 +86,10 @@ class transaksi extends CI_Controller {
 		$this->index($msg);
 		$this->session->set_flashdata('message', $msg);
 		redirect('transaksi');
+	}
+
+	function simpan_transaksi(){
+		$idbarang_jumlah = $this->input->get('idbarang_jumlah');
 	}
 
 	function get_autocomplete_pelanggan(){
